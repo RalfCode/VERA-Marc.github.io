@@ -1,0 +1,402 @@
+/* algemeen */
+
+* {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Taal selecteren */
+
+.flaggen {
+    display: flex;
+    flex-direction: row;
+
+    background-color: rgb(54, 52, 52);
+
+    margin-left: 30%;
+    margin-right: 30%;
+    border-radius: 20px;
+}
+.Nederland {
+    display: block;
+    margin-left: auto;
+    margin-right: 6%;
+    margin-bottom: 20px;
+    width: 50%;
+
+    width: 40%;
+    height: 25%;
+
+    color:rgb(0, 0, 0);
+    text-align: center;
+}
+
+.Engeland {
+    display: block;
+    margin-left: 6%;
+    margin-right: auto;
+    width: 50%;
+    margin-bottom: 20px;
+
+    width: 40%;
+    height: 25%;
+
+    color:rgb(0, 0, 0);
+    text-align: center;
+}
+
+
+
+
+/* header / footer */
+
+body {
+    background-color: rgb(41, 39, 39);
+}
+.nav {
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+}
+
+.logonav {
+    width: 20%;
+    background-color: rgb(41, 39, 39);
+    margin: 0px;
+    
+}
+
+.logo {
+    /* display: block;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-right: auto; */
+    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    
+    
+}
+
+.midnav {
+    text-align: center;
+    width: 60%;
+    background-color: rgb(41, 39, 39);
+    margin: 0px;
+    color: rgb(252, 164, 0);
+    font-weight: bold;
+}
+.navselect {
+    text-decoration: underline;
+    color: rgb(0, 79, 163);
+}
+
+
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+li {
+    margin-right: 50px;
+}
+
+a {
+    color: rgb(255, 255, 255);
+}
+a:hover {
+    color: rgb(0, 79, 163);
+}
+
+.logo2 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    margin-top: 5%;
+    margin-bottom: 10%;
+
+   /* display: block;
+    margin-left: auto;
+    margin-top: 20px;
+    margin-right: 20px; */
+}
+
+.flagnav {
+    display: flex;
+    width: 0; 
+    margin-top: 3%;
+
+    background-color: rgb(41, 39, 39);
+    color: white;
+    text-align: center;
+}
+.NL {
+    margin-right: 10px;
+    text-decoration: underline;
+    color: rgb(252, 164, 0);
+}
+.EN {
+    margin-left: 10px;
+}
+
+footer {
+    margin-top: 1%;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(41, 39, 39);
+    color: white;
+    text-align: center;
+}
+
+/* Home pagina (eye tracking) */
+
+.home {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+
+    text-align: center;
+}
+
+.welkom {
+    color: white;
+    background-color: rgb(54, 52, 52);
+}
+
+.eyetracking {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(54, 52, 52);
+    margin: 0;
+}
+
+.latest_foto {
+    display: flex;
+    flex-direction: column;
+    margin-left: 4%;
+    margin-right: 6%;
+    margin-bottom: 2%;
+
+    width: 40%;
+    height: 25%;
+
+    color:white;
+    text-align: start;
+}
+
+.video {
+    aspect-ratio: 16 / 9;
+    width: 90%;
+    height: 23.5%;
+}
+
+.latest_yt {
+    color:white;
+    text-align:start;
+}
+
+/* foto's pagina*/
+.navfoto {
+    display: flex;
+    text-align: center;
+
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    margin-top: 0;
+    margin-bottom: 1%;
+    
+}
+.main{
+    position:absolute;
+    z-index:1;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.main a{
+  list-style:none;
+  background: rgb(38, 38, 39);
+  width:100px;
+  padding: 0 5px;
+  border: 1px solid black;
+  height: 30px;
+
+  line-height: 30px;
+  
+  -webkit-transition: all .5s ease-in-out;
+  
+}
+
+.main a:nth-child(odd){
+  
+  -webkit-transform-origin: top;
+  -webkit-transform: perspective(350px) rotateX(-90deg);
+}
+
+.main a:nth-child(even){
+   margin-top:-65px;
+  -webkit-transform-origin: bottom;
+  -webkit-transform: perspective(350px) rotateX(90deg);
+}
+
+
+.hov:hover a:nth-child(odd){
+  -webkit-transform-origin: top;
+  -webkit-transform: perspective(350px) rotateX(0deg);
+  margin-top:0;
+}
+
+.hov:hover a:nth-child(even){
+  -webkit-transform-origin: bottom;
+  -webkit-transform: perspective(350px) rotateX(0deg);
+   margin-top:0;
+}
+
+.hov{
+  position:relative;
+  height: 40px;
+  width:112px;
+  background: rgb(54, 52, 52);
+  color: white;
+  font-size: 13px;
+  font-family: Helvetica;
+  font-weight:bold;
+  text-align: center;
+  line-height: 40px;
+  list-style:none;
+  z-index:2;
+  
+}
+
+.foto2017 {
+    color: white;
+}
+.titlefoto {
+    text-align: left;
+    color: white;
+    margin-left: 1%;
+}
+.fotosrij {
+    display: flex;
+    width: 100%;
+}
+
+.fred, .Lucky {
+    width: 33.33%;
+    margin-top: 1%;
+    margin: 1%;
+
+    text-align: center;
+    color: black;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(54, 52, 52);
+}
+
+/* publicaties pagina*/
+.mapjes {
+    text-align: center;
+    color: white;
+    margin: 0;
+    display: flex;
+}
+.map {
+    width: 33.33%;
+    margin-top: 1%;
+    margin: 1%;
+
+    text-align: center;
+    color: black;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(54, 52, 52);
+}
+.titlepublicaties {
+    text-align: left;
+    color: white;
+    margin-left: 1%;
+}
+
+.fotoinmap {
+    text-align: center;
+    color: white;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* about pagina*/
+.overons {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    
+    color:  white;
+    background-color: rgb(54, 52, 52);
+}
+.textover {
+    width: 50%;
+    margin-left: 4%;
+    margin-right: 6%;
+}
+.krant {
+    width: 50%;
+    margin-left: 6%;
+    margin-right: 4%;
+}
+
+.krantfoto {
+    width: 90%;
+    margin-top: 10px;
+    margin: 1%;
+    text-align: center;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+/* contact pagina*/
+
+.contactus {
+    color: white;
+    background-color: rgb(54, 52, 52);
+
+    display: flex;
+    flex-direction: row;
+}
+
+.text_map {
+    margin-left: 2%;
+    margin-right: 20%;
+    margin-bottom: 2%;
+
+    width: 30%;
+}
+
+.Reachus {
+    margin-right: 2%;
+    margin-bottom: 2%;
+
+    width: 50%;
+}
+.email {
+    margin-bottom: 20px;
+}
+
+
+
+
